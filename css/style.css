@@ -590,6 +590,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 480px;
 }
 
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .w-\[370px\] {
   width: 370px;
 }
