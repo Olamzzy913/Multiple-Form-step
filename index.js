@@ -16,6 +16,68 @@ const stepflow4 = document.getElementById('form-step4');
 
 
 
+stepflow1.addEventListener('click', (e) => {
+    e.preventDefault();
+    progessNext1.classList.add('activeBtn');
+    progessNext2.classList.remove('activeBtn');
+    progessNext3.classList.remove('activeBtn');
+    progessNext4.classList.remove('activeBtn');
+    progessNext2.classList.add('diable');
+    progessNext3.classList.add('diable');
+    progessNext4.classList.add('diable');
+    stepflow4.classList.remove('active');
+    stepflow3.classList.remove('active');
+    stepflow2.classList.remove('active');
+    stepflow1.classList.add('active');
+});
+
+stepflow2.addEventListener('click', (e) => {
+    e.preventDefault();
+    progessNext2.classList.add('activeBtn');
+    progessNext1.classList.remove('activeBtn');
+    progessNext3.classList.remove('activeBtn');
+    progessNext4.classList.remove('activeBtn');
+    progessNext1.classList.add('diable');
+    progessNext3.classList.add('diable');
+    progessNext4.classList.add('diable');
+    stepflow4.classList.remove('active');
+    stepflow3.classList.remove('active');
+    stepflow1.classList.remove('active');
+    stepflow2.classList.add('active');
+});
+
+stepflow3.addEventListener('click', (e) => {
+    e.preventDefault();
+    progessNext3.classList.add('activeBtn');
+    progessNext1.classList.remove('activeBtn');
+    progessNext2.classList.remove('activeBtn');
+    progessNext4.classList.remove('activeBtn');
+    progessNext1.classList.add('diable');
+    progessNext2.classList.add('diable');
+    progessNext4.classList.add('diable');
+    stepflow4.classList.remove('active');
+    stepflow2.classList.remove('active');
+    stepflow1.classList.remove('active');
+    stepflow3.classList.add('active');
+});
+
+stepflow4.addEventListener('click', (e) => {
+    e.preventDefault();
+    progessNext4.classList.add('activeBtn');
+    progessNext1.classList.remove('activeBtn');
+    progessNext2.classList.remove('activeBtn');
+    progessNext3.classList.remove('activeBtn');
+    progessNext1.classList.add('diable');
+    progessNext2.classList.add('diable');
+    progessNext3.classList.add('diable');
+    stepflow3.classList.remove('active');
+    stepflow2.classList.remove('active');
+    stepflow1.classList.remove('active');
+    stepflow4.classList.add('active');
+});
+
+
+
 
 btnNextA.addEventListener('click', (e) => {
     e.preventDefault();
